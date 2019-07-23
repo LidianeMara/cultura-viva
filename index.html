@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content=" ">
+  <meta name="author" content="">
+  <meta name="keywords" content="">
+
+  <title>Queremos a Lei Cultura Viva em BH</title>
+  <link rel="icon" href="img/favicon.ico">
+
+  <!-- Font Awesome Icons -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+
+  <!-- Plugin CSS -->
+  <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+  <!-- Theme CSS - Includes Bootstrap -->
+  <link href="css/creative.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/5.11.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.11.0/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBJsd4GwK0rU5LvWdIZ-cWXdUpUx2AoXdU",
+    authDomain: "pl-gabinetona.firebaseapp.com",
+    databaseURL: "https://pl-gabinetona.firebaseio.com",
+    projectId: "pl-gabinetona",
+    storageBucket: "",
+    messagingSenderId: "426709027861",
+    appId: "1:426709027861:web:e2a5379dd4c05e56"
+  };
+
+  // Initialize Firebase
+  app = firebase.initializeApp(firebaseConfig);
+  db = app.firestore()
+
+ window.addEventListener('load', function(){
+ let f = document.querySelector('form');
+ function saveuser(name,email) {
+  db.collection("users").add({
+    name:name, email:email    
+  })
+  .then(function(docRef) {
+     alert('Inscrição realizada com sucesso!');
+     f.elements['name'].value="";
+     f.elements['email'].value="" ;
+  })
+  .catch(function(error) {
+      console.error("Error adding document: ", error);
+  });
+ }
+  f.addEventListener('submit', function(e) {
+    let name = f.elements['name'].value
+    let email = f.elements['email'].value
+    saveuser(name,email);
+    e.preventDefault();
+  })
+
+ });
+
+</script>
+
+ </head>
+
+<body id="page-top">
+
+  <!-- START Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Queremos a Lei Cultura Viva em BH<span class="title-point">.</span></a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto my-2 my-lg-0">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#benefits">Vantagens</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#aplication">Aplicações</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#privacy">Política de Privacidade</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- /END Navigation -->
+
+  <!-- START Header -->
+  <header class="masthead">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center justify-content-center text-center">
+        <div class="col-lg-10 align-self-end">
+          <h1 class="text-uppercase text-white font-weight-bold">What is Lorem Ipsum?</h1>
+          <hr class="divider my-4">
+        </div>
+        <div class="col-lg-8 align-self-baseline">
+          <p class="text-white font-weight-light mb-5">Lorem Ipsum is simply dummy text of the printing and typesetting 
+                                                      industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                                                      when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+          <a class="btn btn-primary btn-xl js-scroll-trigger"
+            href="#contact">Apoie a Lei Cultura Viva</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- /END Header -->
+
+  <!-- START About Section -->
+  <section class="page-section" id="about">
+   
+    <div class="container">
+      
+      <div class="row justify-content-center">
+         
+        <div class="col-lg-8 text-center">
+          <h2 class="text-muted mt-0">What is Lorem Ipsum?</h2>
+          <hr class="divider my-4">
+          <p class="text-muted mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised 
+            in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+             Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+      </div>
+   </div>
+
+  </section>
+  <!-- /END About Section -->
+
+  <!-- START Benefits Section -->
+  <section class="page-section bg-light" id="benefits">
+    <div class="container-fluid px-5">
+      <h2 class="text-center mt-0">What is Lorem Ipsum?</h2>
+      <hr class="divider my-4">
+     
+          <div id="carouselPrincipal" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <img class="d-block w-100"  src="img/banner-1.png"  >
+                  <div class="carousel-caption d-none d-md-block">                       
+                      <h5> Whats is Lorem Ipsum?</h5>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+                </div>
+              </div>
+            
+              <div class="carousel-item">
+                  <img class="d-block w-100"  src="img/banner-2.png">
+                   <div class="carousel-caption d-none d-md-block">
+                      <h5> Whats is Lorem Ipsum?</h5>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+                </div>
+              </div>
+                
+              <div class="carousel-item">
+                  <img class="d-block w-100" src="img/banner-3.png">
+                   <div class="carousel-caption d-none d-md-block">                        
+                  <h5> Whats is Lorem Ipsum?</h5>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+                </div>
+              </div>
+        
+
+          <a class="carousel-control-prev" href="#carouselPrincipal" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Anterior</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselPrincipal" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Proximo</span>
+          </a>
+
+        </div> 
+      </div>
+
+
+       </div>
+      
+      </div>
+    </div>
+  </section>
+  <!-- /END Benefits Section -->
+
+  <!-- START Aplication Section -->
+  <section class="page-section" id="aplication">
+    <div class="container marketing px-5">
+      <h2 class="text-center mt-0">What is Lorem Ipsum?</h2>
+      <hr class="divider my-4 pb-5">
+      <div class="row justify-content-center align-items-center pb-5">
+        <div class="col-4">
+          <h3 class="h4 mb-2">What is Lorem Ipsum?s</h3>
+          <p class="text-muted mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+        </div>
+        <div class="col-4 text-center">
+          <img src="img/algorithm.svg" alt="Ilustração de um algoritmo para automatização de processo" height="100"
+            width="100">
+        </div>
+      </div>
+      <hr class="featurette-divider">
+      <div class="row justify-content-center align-items-center py-5">
+        <div class="col-4 order-md-2">
+          <h3 class="h4 mb-2">TWhat is Lorem Ipsum?</h3>
+          <p class="text-muted mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+        </div>
+        <div class="col-4 order-md-1 text-center">
+          <img src="img/workflow.svg" alt="Ilustração de um processo para tomada de decisão" height="100" width="100">
+        </div>
+      </div>
+      <hr class="featurette-divider">
+      <div class="row justify-content-center align-items-center py-5">
+        <div class="col-4">
+          <h3 class="h4 mb-2">What is Lorem Ipsum?</h3>
+          <p class="text-muted mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+        </div>
+        <div class="col-4 text-center">
+          <img src="img/spying.svg" alt="Ilustração de um computador analisando a similaridade das informações"
+            height="100" width="100">
+        </div>
+      </div>
+      <hr class="featurette-divider">
+      <div class="row justify-content-center align-items-center py-5">
+        <div class="col-4 order-md-2">
+          <h3 class="h4 mb-2">What is Lorem Ipsum?</h3>
+          <p class="text-muted mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+        </div>
+        <div class="col-4 order-md-1 text-center">
+          <img src="img/authorize.svg" alt="Ilustração de um documento verificado por antifraude" height="100"
+            width="100">
+        </div>
+      </div>
+      <hr class="featurette-divider">
+      <div class="row justify-content-center align-items-center pt-5">
+        <div class="col-4">
+          <h3 class="h4 mb-2">What is Lorem Ipsum?</h3>
+          <p class="text-muted mb-0">ULorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+        </div>
+        <div class="col-4 text-center">
+          <img src="img/computer.svg" alt="Ilustração de um computador extraindo informações" height="100" width="100">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /END Aplication Section -->
+
+  <!-- START Privacy Policy Section -->
+  <section class="page-section bg-dark text-white" id="privacy">
+      <div class="container">
+        <h2 class="mb-2 text-center">What is Lorem Ipsum?</h2>
+        <p class="mb-5 text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="main-timeline">
+                        <div class="timeline">
+                            <a href="" class="timeline-content">
+                                <div class="timeline-year">
+                                    <span>2019</span>
+                                </div>
+                                <div class="inner-content">
+                                    <h3 class="title">Web Development <i class="fa fa-users"></i></h3>
+                                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci culpa
+                                        dolore explicabo fuga pariatur gjkfdgj  quis reprehenderit tenetur vel!</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="timeline">
+                            <a href="" class="timeline-content">
+                                <div class="timeline-year">
+                                    <span>2018</span>
+                                </div>
+                                <div class="inner-content">
+                                    <h3 class="title">Web Designing <i class="fa fa-globe"></i></h3>
+                                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci culpa
+                                        dolore explicabo fuga pariatur gjkfdgj  quis reprehenderit tenetur vel!</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+  </section>
+  <!-- /END Privacy Policy Section -->
+
+  <!-- START Contact Section -->
+  <section class="page-section" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 text-left">
+          <div class="text-search-wrapper">
+            <h3 class="font-weight-bold">PL<span class="title-point">.</span></h3>
+            <p class="text-muted mb-0">Ainda tem dúvidas?</p>
+            <p class="font-weight-bold mb-0">Converse com a gente!</p>
+            <p class="text-muted">E-mail: contato@</p>
+            <p class="text-muted mb-0">Siga-nos nas redes sociais: </p>
+            <div class="section-img">
+              <a href="#" target="_blank"><i
+                  class="fab fa-facebook-square"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-twitter-square"></i></a>
+              <a href="#" target="_blank"><i
+                  class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mr-auto">
+          <div class="search-wrapper">
+            <form>
+              <h3 class="titulo-form">Fique por dentro</h3>
+              <div class="form-group">
+                <input class="form-control" type="text" name="name" placeholder="Nome" required>
+              </div>
+              <div class="form-group">
+                <input class="form-control" type="email" name="email" placeholder="E-mail" required>
+              </div>
+              
+              <div class="form-group custom-control custom-checkbox text-left mb-5">
+                <input type="checkbox" id="option" class="custom-control-input" value="ATIVO" name="news">
+                <label class="custom-control-label" for="option">Receba a nossa newsletter</label>
+              </div>
+              <div id="sendForm"></div>
+              <button type="submit" id="submit" value =" Quero saber mais! "name="enviar" class="btn btn-primary btn-xl js-scroll-trigger">Quero saber mais!</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /END Contact Section -->
+
+  <!-- START Footer -->
+  <footer class="py-1">
+    <div class="container">
+      <div class="small text-center text-muted">Copyright &copy; 2019 - Gabinetona - Todos os direitos reservados</div>
+    </div>
+  </footer>
+  <!-- /END Footer -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/creative.js"></script>
+  <script src="js/Pricipal.js"></script>
+
+</body>
+
+</html>
