@@ -92,4 +92,17 @@ $('#inline-popups').magnificPopup({
   midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
 });
 
+$(window).scroll(function() {
+  var x = $(window).scrollTop();
+
+  if (x >= 20) {
+    $("#logo-topo").show();
+  } else {
+    $("#logo-topo").hide();
+  }
+
+});
+
+
+
 })(jQuery); // End of use strict
