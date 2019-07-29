@@ -10885,7 +10885,7 @@ header.masthead h1 {
 }
 /* IMAGEM CIDA FALABELLA   */
 .img-cida{
-  background: white;
+  float: left;
   width: 50%;
   height: auto;
 }
