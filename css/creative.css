@@ -191,6 +191,7 @@ sup {
 }
 
 a {
+  
   color: #109BF8;
   text-decoration: none;
   background-color: transparent;
@@ -2649,14 +2650,14 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #109BF8;
-  border-color: #109BF8;
+  background-color: #D780F8;
+  border-color:#97E4FA;
 }
 
 .btn-primary:hover {
   color: #fff;
   background-color: #0070bb;
-  border-color: #0070bb;
+  border-color: #009fbb;
 }
 
 .btn-primary:focus, .btn-primary.focus {
@@ -10641,15 +10642,17 @@ hr.light {
 
 .btn {
   font-family: 'Source Sans Pro', sans-serif;
+  font-style: italic;
+  
 }
 
 .btn-xl {
   padding: 1.25rem 2.25rem;
-  font-size: 0.85rem;
+  font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase;
   border: none;
-  border-radius: 10rem;
+  border-radius: 12px;
 }
 
 .page-section {
@@ -10670,9 +10673,11 @@ hr.light {
   color: #4b4b4b;
 }
 
+/*  NAVEGAÇÃO  */ 
+
 #mainNav .navbar-nav .nav-item .nav-link {
   color: #6c757d;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Gobold Bold Italic', sans-serif;
   font-weight: 500;
   font-size: 16px;
   padding: 0.75rem 0;
@@ -10686,42 +10691,56 @@ hr.light {
   color: #109BF8 !important;
 }
 
+
 @media (min-width: 992px) {
   #mainNav {
     -webkit-box-shadow: none;
     box-shadow: none;
     background-color: transparent;
+   
   }
   #mainNav .navbar-brand {
+    
     color: rgba(255, 255, 255, 0.7);
   }
   #mainNav .navbar-brand:hover {
+    
     color: #fff;
   }
+
+  /*  MENU    */ 
   #mainNav .navbar-nav .nav-item .nav-link {
+    
     color: rgba(255, 255, 255, 0.7);
+    font-size: 18px;
     padding: 0 1rem;
   }
   #mainNav .navbar-nav .nav-item .nav-link:hover {
     color: #fff;
   }
   #mainNav .navbar-nav .nav-item:last-child .nav-link {
+    
     padding-right: 0;
   }
   #mainNav.navbar-scrolled {
+    align-items: center;
+    background:url(../img/back-nav.png);
+    background-size: auto;
+    height: 120px;
+    background-repeat: no-repeat;
     -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     background-color: #fff;
   }
-  #mainNav.navbar-scrolled .navbar-brand {
-    color: #4b4b4b;
+  #mainNav.navbar-scrolled .navbar-brand {   
+        color: #4b4b4b;
   }
   #mainNav.navbar-scrolled .navbar-brand:hover {
     color: #109BF8;
   }
   #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link {
-    color: #4b4b4b;
-  }
+      color: #4b4b4b;
+        }
   #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link:hover {
     color: #109BF8;
   }
