@@ -10883,7 +10883,12 @@ header.masthead h1 {
   height: 50px;
   border-radius: 0;
 }
-
+/* IMAGEM CIDA FALABELLA   */
+.img-cida{
+  background: white;
+  width: 50%;
+  height: auto;
+}
 
 /*  DEPOIMENTOS    */ 
 .video-testimonial-block {
