@@ -7413,6 +7413,7 @@ button.bg-dark:focus {
 
 .embed-responsive .embed-responsive-item,
 .embed-responsive embed,
+.embed-responsive frame,
 .embed-responsive object,
 .embed-responsive video {
   position: absolute;
