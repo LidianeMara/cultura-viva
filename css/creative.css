@@ -37,7 +37,6 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: 'Source Sans Pro', sans-serif;
   }
 
 *,
@@ -47,15 +46,19 @@
   box-sizing: border-box;
 }
 
-
-@font-face{
-  font-family:'Gobold Bold Italic';
-  src:  url('fonts/Gobold Bold Italic.tff') format('truetype');     
-  }
+@font-face {
+  font-family:"Gobold Bold Italic Italic";
+  src:url("Gobold_Bold_Italic.eot?") format("eot"),
+  url("Gobold_Bold_Italic.woff") format("woff"),
+  url("Gobold_Bold_Italic.ttf") format("truetype"),
+  url("Gobold_Bold_Italic.svg#GoboldBoldItalic-Italic") format("svg"),
+  url(../fonts/Gobold-Bold-Italic.ttf);
+  font-weight:normal;
+  font-style:normal;
+}
 
 
 html {
-  font-family: 'Source Sans Pro', sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -111,7 +114,7 @@ hr {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Gobold Bold Italic";
+  font-family:"Gobold Bold Italic Italic", sans-serif;
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
@@ -406,12 +409,14 @@ template {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
-  font-family: 'Gobold Bold Italic', sans-serif;
-  font-weight: 500;
+  font-family:"Gobold Bold Italic Italic", sans-serif;
+  font-weight: bold;
   line-height: 1.2;
 }
 
 h1, .h1 {
+  font-family:"Gobold Bold Italic Italic ", sans-serif;
+  font-weight: bold;
   font-size: 2.5rem;
 }
 
@@ -4386,6 +4391,7 @@ input[type="button"].btn-block {
 }
 
 .nav-tabs .nav-item {
+
   margin-bottom: -1px;
 }
 
@@ -10641,7 +10647,7 @@ hr.light {
 }
 
 .btn {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Gobold Bold Italic Italic', sans-serif;
   
 }
 
@@ -10667,18 +10673,14 @@ hr.light {
 }
 
 #mainNav .navbar-brand {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 700;
   color: #4b4b4b;
 }
 
 /*  NAVEGAÇÃO  */ 
 
 #mainNav .navbar-nav .nav-item .nav-link {
-  color: #6c757d;
-  font-family: 'Gobold Bold Italic', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
+  font-family:"Gobold Bold Italic Italic", sans-serif;
+  font-weight: 400;
   padding: 0.75rem 0;
 }
 
@@ -10709,9 +10711,11 @@ hr.light {
 
   /*  MENU    */ 
   #mainNav .navbar-nav .nav-item .nav-link {
-    
+    font-family:"Gobold Bold Italic Italic", sans-serif;
+    font-style: italic;
+    font-weight: 600;
     color: black;
-    font-size: 18px;
+    font-size: 17px;
     padding: 0 1rem;
   }
   #mainNav .navbar-nav .nav-item .nav-link:hover {
