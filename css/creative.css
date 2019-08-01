@@ -6641,17 +6641,21 @@ a.close.disabled {
 
 .carousel{
   display: flex;
-  width: 100%;
+  width: 80%;
   height: auto;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: nowrap;
   height:90%;
+
 }
 
 .carousel-inner .item div {
   display: flex;
+  padding: 10px;
+  justify-content: space-around;
+
  }
 
 .img {
@@ -6768,11 +6772,11 @@ a.close.disabled {
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
+  align-items: left;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 15%;
+  width: 25%;
   color: #fff;
   text-align: center;
   opacity: 0.5;
@@ -6802,7 +6806,7 @@ a.close.disabled {
 }
 
 .carousel-control-next {
-  right: 0;
+  right: 20px;
 }
 
 .carousel-control-prev-icon,
@@ -7183,6 +7187,14 @@ button.bg-dark:focus {
 .rounded-0 {
   border-radius: 0 !important;
 }
+p.right {
+  text-align: right;
+
+}
+p.left{
+  text-align: left;
+}
+
 
 .clearfix::after {
   display: block;
