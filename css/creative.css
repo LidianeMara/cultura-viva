@@ -407,6 +407,7 @@ h1, h2, h3, h4, h5, h6,
   line-height: 1.2;
 }
 
+
 h1, .h1 {
   font-size: 2.5rem;
 }
@@ -10759,18 +10760,24 @@ hr.light {
   background-color: #3BB4D7;
 }
 
- .masthead .box-head{ 
-  background-color:#D780F8; 
-  width: auto;
+/*  BOX DE  FUNDO TEXTO   */
+ .box-head{ 
+  text-align: right !important;
+  width: 100%;
+  z-index: -1;
   padding: 50px;
-  margin: 20px;}
+  background-color: #D780F8; 
+ 
+ }
+
+
 
 
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(8rem - 72px);
   background:  url("../img/capa-teste.png");
-  background-color: #97E4FA;
+  background-color: #3BB4D7;
   background-position: left;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -10778,7 +10785,7 @@ header.masthead {
 }
 
 header.masthead h1 {
-  font-size: 20rem;
+  font-size: 2.5rem;
 }
 
 @media (min-width: 992px) {
