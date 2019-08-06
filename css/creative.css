@@ -10661,6 +10661,30 @@ hr.light {
   
 }
 
+
+
+.btn-x1 {
+  padding: 1.1rem 1.25rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 8rem;
+}
+
+
+
+.btn-x2 {
+  padding: 1.1rem 1.25rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 8rem;
+}
+
+
+
 .btn-xl {
   padding: 1.50rem 3.0rem;
   font-size: 2.5rem;
@@ -10768,12 +10792,12 @@ header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(8rem - 72px);
   background:  url("../img/capa-teste.png");
+  background-size: 20%;
   background-color: #3BB4D7;
   background-position: left;
   background-repeat: no-repeat;
-  background-size: contain; 
- 
-}
+  background-size: cover; 
+ }
 
 
 /*  BOX DE  FUNDO TEXTO   */
