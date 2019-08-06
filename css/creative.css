@@ -10764,14 +10764,15 @@ hr.light {
 
 
 header.masthead {
+  
   padding-top: 10rem;
   padding-bottom: calc(8rem - 72px);
   background:  url("../img/capa-teste.png");
   background-color: #3BB4D7;
   background-position: left;
   background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover; 
+  background-size: contain; 
+ 
 }
 
 
@@ -10781,7 +10782,7 @@ header.masthead {
   z-index: 2;
   padding: 40px;
   background-color: #D780F8; 
- 
+
  }
 
 header.masthead h1 {
