@@ -10661,8 +10661,6 @@ hr.light {
   
 }
 
-
-
 .btn-x1 {
   padding: 1.1rem 1.25rem;
   font-size: 1.15rem;
@@ -10784,18 +10782,17 @@ hr.light {
   background-color: #3BB4D7;
 }
 
-
+.masthead .capa{
+  margin-top: -275px;
+  position: absolute;
+  background-size: cover;
+  z-index: 1;
+}
 
 
 header.masthead {
-  
-  padding-top: 10rem;
-  padding-bottom: calc(8rem - 72px);
-  background:  url("../img/capa-teste.png");
-  background-size: 20%;
+ 
   background-color: #3BB4D7;
-  background-position: left;
-  background-repeat: no-repeat;
   background-size: cover; 
  }
 
@@ -10813,7 +10810,6 @@ header.masthead h1 {
   margin-top: -60px;
   font-size: 6.5rem;
   margin-left: 200px;
-  z-index: 1;
   float: left;
   width: 60%;
 }
