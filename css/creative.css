@@ -42,6 +42,9 @@
 *,
 *::before,
 *::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -525,8 +528,7 @@ mark,
 
 .img-thumbnail {
   padding: 0.25rem;
-  background-color: #fff;
-  border: 1px solid #dee2e6;
+  
   border-radius: 0.25rem;
   max-width: 100%;
   height: auto;
@@ -6693,7 +6695,7 @@ a.close.disabled {
 }
 
 .carousel-item {
-  position: relative;
+  position: block;
   display: none;
   float: left;
   width: 100%;
@@ -10804,7 +10806,7 @@ header.masthead {
 
 header.masthead h1 {
   margin-top: -60px;
-  font-size: 6.5rem;
+  font-size: 2.5rem;
   margin-left: 200px;
   float: left;
   width: 60%;
@@ -10821,13 +10823,13 @@ header.masthead h1 {
     font-size: 1.15rem;
   }
   header.masthead h1 {
-    font-size: 6.5rem;
+    font-size: 3.5rem;
   }
 }
 
 @media (min-width: 1200px) {
   header.masthead h1 {
-    font-size: 6.5rem;
+    font-size: 5.5rem;
   }
 }
 
