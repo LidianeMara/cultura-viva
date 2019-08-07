@@ -68,7 +68,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-section{
+.masthead section {
   display: flex;
 }
 
@@ -10737,4 +10737,22 @@ h3::after {
 
 .bg-gray {
   background: #818182;
+}
+
+
+/*  IMAGENS "TIMELINE"  */
+
+.marketing div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.marketing img {
+ flex-direction: row;
+ width: 50%;
+ height: auto;
+ max-width: 100%;
+ max-height: auto;
+
+
 }
