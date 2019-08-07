@@ -4665,8 +4665,7 @@ input[type="button"].btn-block {
 }
 
 .card-img-top {
-  width: 100%;
-  margin:auto;
+  margin:45px;
   border-top-left-radius: calc(0.25rem - 1px);
   border-top-right-radius: calc(0.25rem - 1px);
 }
@@ -10740,20 +10739,3 @@ h3::after {
   background: #818182;
 }
 
-
-/*  IMAGENS "TIMELINE"  */
-
-.marketing div {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.marketing img {
- flex-direction: row;
- width: 50%;
- height: auto;
- max-width: 100%;
- max-height: auto;
-
-
-}
