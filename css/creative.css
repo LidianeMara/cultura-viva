@@ -4690,6 +4690,10 @@ input[type="button"].btn-block {
   margin-bottom: 15px;
 }
 
+.card-deck .img-card {
+  margin-left:150px;
+}
+
 @media (min-width: 576px) {
   .card-deck {
     -webkit-box-orient: horizontal;
