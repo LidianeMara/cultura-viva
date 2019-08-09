@@ -70,6 +70,7 @@ html {
 
 .masthead section {
   display: flex;
+  flex-wrap: wrap;
 }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav{
