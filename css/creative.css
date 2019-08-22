@@ -10364,16 +10364,6 @@ hr.light {
 }
 
 
-.btn-xl {
-  margin-top: 200px;
-  z-index: 2;
-  padding: 1.1rem 1.25rem;
-  font-size: 2.5rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  border: none;
-  border-radius: 8rem;
-}
 .page-section {
   padding: 8rem 0;
   
@@ -10471,7 +10461,6 @@ hr.light {
   background-size: cover;
   overflow: auto;
   width: 100%;
-  min-width: 15%;
   height: auto;
   z-index: 1;
 }
@@ -10494,11 +10483,15 @@ header.masthead {
  }
 
 header.masthead h1 {
-  margin-top: -60px;
-  font-size: 2.5rem;
-  margin-left: 200px;
-  float: left;
+  font-size: 2.2rem;
 }
+
+header.masthead a {
+  border-radius: 8rem;
+  font-size: 1.75rem;
+  margin-left: 150px;
+}
+
 
 @media (min-width: 992px) {
   header.masthead {
@@ -10513,14 +10506,37 @@ header.masthead h1 {
   header.masthead h1 {
     font-size: 5.5rem;
     width: 60%;
+    float: left;
+    margin-top: -60px;
+    margin-left: 200px;
   }
+  header.masthead a {
+    margin-top: 200px;
+    z-index: 2;
+    padding: 1.1rem 1.25rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 8rem;
+  }
+
 }
 
-@media (max-width: 250px) {
+@media (max-width: 367px) {
   header.masthead h1 {
-    font-size: 2.5rem;
-    
+    font-size: 2.5rem;   
   }
+
+  header.masthead a {
+    width: 50px;
+  }
+
+.masthead .capa{
+    width: 25%;
+  }
+  
+
 }
 
 #portfolio .container-fluid {
