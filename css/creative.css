@@ -10406,6 +10406,8 @@ hr.light {
     background-color: transparent;
    
   }
+
+  
   #mainNav .navbar-brand {
     
     color: rgba(255, 255, 255, 0.7);
@@ -10455,15 +10457,6 @@ hr.light {
   background-color: #3BB4D7;
 }
 
-.masthead .capa{
-  margin-top: -275px;
-  position: absolute;
-  background-size: cover;
-  overflow: auto;
-  width: 100%;
-  height: auto;
-  z-index: 1;
-}
 
 
 header.masthead {
@@ -10491,15 +10484,26 @@ header.masthead a {
   font-size: 1.75rem;
   margin-left: 150px;
 }
+.masthead img{
+  margin-top: -275px;
+  position: absolute;
+  background-size: cover;
+  overflow: auto;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
 
-
-@media (min-width: 992px) {
+@media (min-width: 1080px) {
   header.masthead {
     height: 100vh;
     min-height: 40rem;
     padding-top: 72px;
     padding-bottom: 0;
   }
+
+ 
+  
   header.masthead p {
     font-size: 1.15rem;
   }
@@ -10520,7 +10524,7 @@ header.masthead a {
     border: none;
     border-radius: 8rem;
   }
-
+  
 }
 
 @media (max-width: 367px) {
@@ -10531,13 +10535,8 @@ header.masthead a {
   header.masthead a {
     width: 50px;
   }
-
-.masthead .capa{
-    width: 25%;
-  }
-  
-
 }
+
 
 #portfolio .container-fluid {
   max-width: 1920px;
