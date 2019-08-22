@@ -10409,7 +10409,7 @@ hr.light {
 }
 
 
-@media (min-width: 992px) {
+@media (min-width: 250px) {
   #mainNav {
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -10470,6 +10470,9 @@ hr.light {
   position: absolute;
   background-size: cover;
   overflow: auto;
+  width: 100%;
+  min-width: 15%;
+  height: auto;
   z-index: 1;
 }
 
@@ -10495,7 +10498,7 @@ header.masthead h1 {
   font-size: 2.5rem;
   margin-left: 200px;
   float: left;
-  width: 60%;
+  align-self: justify;
 }
 
 @media (min-width: 992px) {
@@ -10509,11 +10512,11 @@ header.masthead h1 {
     font-size: 1.15rem;
   }
   header.masthead h1 {
-    font-size: 3.5rem;
+    font-size: 5.5rem;
   }
 }
 
-@media (min-width: 1200px) {
+@media (max-width: 250px) {
   header.masthead h1 {
     font-size: 5.5rem;
   }
