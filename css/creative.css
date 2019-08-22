@@ -10498,7 +10498,6 @@ header.masthead h1 {
   font-size: 2.5rem;
   margin-left: 200px;
   float: left;
-  align-self: justify;
 }
 
 @media (min-width: 992px) {
@@ -10513,12 +10512,14 @@ header.masthead h1 {
   }
   header.masthead h1 {
     font-size: 5.5rem;
+    width: 60%;
   }
 }
 
 @media (max-width: 250px) {
   header.masthead h1 {
-    font-size: 5.5rem;
+    font-size: 2.5rem;
+    
   }
 }
 
