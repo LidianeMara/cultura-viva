@@ -10419,9 +10419,10 @@ hr.light {
     font-style: italic;
     font-weight: 600;
     color: black;
-    font-size: 17px;
+    font-size: 12px;
     padding: 0 1rem;
   }
+ 
   #mainNav .navbar-nav .nav-item .nav-link:hover {
     color: #fff;
   }
@@ -10527,6 +10528,15 @@ header.masthead a {
     width: 55px;
     height: auto;
   }
+  #mainNav .navbar-nav .nav-item .nav-link {
+    font-family:"Gobold Bold Italic Italic", sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    color: black;
+    font-size: 17px;
+    padding: 0 1rem;
+  }
+  
   
 }
 
@@ -10534,6 +10544,7 @@ header.masthead a {
   header.masthead h1 {
     font-size: 2.5rem;   
   }
+  
 
   header.masthead a {
     width: 50px;
