@@ -92,11 +92,6 @@ body {
   outline: 0 !important;
 }
 
-.logo-topo{
-    display: flex;
-    width: 60px;
-    height: auto;
-}
 
 hr {
   -webkit-box-sizing: content-box;
@@ -4366,6 +4361,7 @@ input[type="button"].btn-block {
     padding-right: 0;
     padding-left: 0;
   }
+  
 }
 
 @media (min-width: 1200px) {
@@ -10399,7 +10395,7 @@ hr.light {
 }
 
 
-@media (min-width: 250px) {
+@media (max-width: 1920px) {
   #mainNav {
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -10407,10 +10403,10 @@ hr.light {
    
   }
 
-  
+
   #mainNav .navbar-brand {
     
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(37, 37, 37, 0.753);
   }
   #mainNav .navbar-brand:hover {
     
@@ -10453,18 +10449,12 @@ hr.light {
   }
 }
 
+
+
+
 .section-cultura{
   background-color: #3BB4D7;
 }
-
-
-
-header.masthead {
- 
-  background-color: #3BB4D7;
-  background-size: cover; 
- }
-
 
 /*  BOX DE  FUNDO TEXTO   */
 .box-head{ 
@@ -10474,6 +10464,16 @@ header.masthead {
   background-color: #D780F8; 
 
  }
+ header.masthead {
+  height: 100vh;
+  min-height: 40rem;
+  padding-top: 72px;
+  padding-bottom: 0;
+  background-color: #3BB4D7;
+  background-size: cover; 
+}
+
+
 
 header.masthead h1 {
   font-size: 2.2rem;
@@ -10494,16 +10494,15 @@ header.masthead a {
   z-index: 1;
 }
 
-@media (min-width: 1080px) {
-  header.masthead {
-    height: 100vh;
-    min-height: 40rem;
-    padding-top: 72px;
-    padding-bottom: 0;
-  }
+.navbar-brand .logo-topo{
+  margin-bottom: 25px;
+  width: 27px;
+  height: auto;
+}
+/*  RESPONSIVO  */ 
 
- 
-  
+@media (min-width: 1080px) {
+   
   header.masthead p {
     font-size: 1.15rem;
   }
@@ -10524,6 +10523,10 @@ header.masthead a {
     border: none;
     border-radius: 8rem;
   }
+  .navbar-brand .logo-topo  {
+    width: 55px;
+    height: auto;
+  }
   
 }
 
@@ -10535,6 +10538,7 @@ header.masthead a {
   header.masthead a {
     width: 50px;
   }
+ 
 }
 
 
