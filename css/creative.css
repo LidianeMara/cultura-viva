@@ -10475,6 +10475,11 @@ hr.light {
   background-size: cover; 
 }
 
+.masthead img{
+  margin-top: -250px;
+  width: 100%;
+  height: auto;
+}
 
 
 header.masthead h1 {
@@ -10485,15 +10490,6 @@ header.masthead a {
   border-radius: 8rem;
   font-size: 1.75rem;
   margin-left: 150px;
-}
-.masthead img{
-  margin-top: -275px;
-  position: absolute;
-  background-size: cover;
-  overflow: auto;
-  width: 100%;
-  height: auto;
-  z-index: 1;
 }
 
 .navbar-brand .logo-topo{
@@ -10507,6 +10503,18 @@ header.masthead a {
   header.masthead p {
     font-size: 1.15rem;
   }
+
+  
+.masthead img{
+  margin-top: -275px;
+  position: absolute;
+  background-size: cover;
+  overflow: auto;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
   header.masthead h1 {
     font-size: 5.5rem;
     width: 60%;
