@@ -10459,13 +10459,15 @@ hr.light {
 }
 
 /*  BOX DE  FUNDO TEXTO   */
-.box-head{ 
+.masthead .box-head{ 
   width: 100%;
   z-index: 2;
   padding: 40px;
   background-color: #D780F8; 
 
  }
+
+ /*   MOBILE RESPONSIVO       */
  header.masthead {
   height: 100vh;
   min-height: 40rem;
@@ -10495,13 +10497,14 @@ header.masthead a {
 .navbar-brand .logo-topo{
   width: 40px;
   height: auto;
+
 }
 /*  RESPONSIVO  */ 
 
 @media (min-width: 1080px) {
    
   header.masthead p {
-    font-size: 1.15rem;
+    font-size: 0.75rem;
   }
 
   
