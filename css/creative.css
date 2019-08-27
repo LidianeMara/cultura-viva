@@ -10473,7 +10473,7 @@ hr.light {
 
 .masthead img{
   position: absolute;
-  margin-top: 30px;
+  margin-top: 50px;
   width: 100%;
   z-index: 1;
  
@@ -10481,9 +10481,10 @@ hr.light {
 
 
 header.masthead h1 {
+  
   font-size: 2.5rem;
   margin-left: 35px;
-  margin-top: -55px;
+  margin-top: -45px;
 
 }
 
@@ -10512,7 +10513,7 @@ header.masthead p {
   width: 100%;
   z-index: 2;
   padding: 15px;
-  margin-top: -30px;
+  margin-top: -23px;
   background-color: #D780F8; 
 
  }
