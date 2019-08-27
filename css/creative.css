@@ -10505,11 +10505,13 @@ header.masthead a {
 header.masthead p {
   font-size: 0.85rem;
   font-style: bold;
+  margin-top: -150px;
+  background-color: #000;
 }
 .masthead .box-head{     /*  BOX DE  FUNDO TEXTO   */
   width: 100%;
   z-index: 2;
-  padding: 50px;
+  padding: 25px;
   margin-top: -30px;
   background-color: #D780F8; 
 
