@@ -10504,7 +10504,7 @@ header.masthead a {
 @media (min-width: 1080px) {
    
   header.masthead p {
-    font-size: 0.75rem;
+    font-size: 1.20rem;
   }
 
   
@@ -10536,6 +10536,7 @@ header.masthead a {
     border-radius: 8rem;
   }
   .navbar-brand .logo-topo  {
+    margin-top: 20px;
     width: 55px;
     height: auto;
   }
