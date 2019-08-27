@@ -10483,7 +10483,7 @@ hr.light {
 header.masthead h1 {
   font-size: 2.5rem;
   margin-left: 35px;
-  margin-top: -124px;
+  margin-top: -55px;
 
 }
 
@@ -10503,7 +10503,7 @@ header.masthead a {
 }
  
 header.masthead p {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-style: bold;
   margin-top: -150px;
   background-color: #000;
@@ -10511,7 +10511,7 @@ header.masthead p {
 .masthead .box-head{     /*  BOX DE  FUNDO TEXTO   */
   width: 100%;
   z-index: 2;
-  padding: 25px;
+  padding: 15px;
   margin-top: -30px;
   background-color: #D780F8; 
 
