@@ -10461,9 +10461,7 @@ hr.light {
 
 
 
- /*   MOBILE RESPONSIVO       */
-
- 
+ /*   MOBILE RESPONSIVO       */ 
  header.masthead {
   height: 100vh;
   min-height: 40rem;
@@ -10474,22 +10472,27 @@ hr.light {
 }
 
 .masthead img{
-  margin-top: -250px;
+  position: absolute;
+  margin-top: 30px;
   width: 100%;
-  height: auto;
+  z-index: 1;
+ 
 }
 
 
 header.masthead h1 {
-  font-size: 1.85rem;
-  margin-left: 20px;
+  font-size: 2.5rem;
+  margin-left: 35px;
+  margin-top: -80px;
+
 }
 
 header.masthead a {
+  position: absolute;
   border-radius: 8rem;
   font-size: 1.75rem;
   margin-left: 150px;
-  margin-top: -15px; 
+  margin-top: 40px;
   z-index: 3;
 }
 
@@ -10500,13 +10503,13 @@ header.masthead a {
 }
  
 header.masthead p {
-  font-size: 0.97rem;
+  font-size: 0.65rem;
   font-style: bold;
 }
 .masthead .box-head{     /*  BOX DE  FUNDO TEXTO   */
   width: 100%;
   z-index: 2;
-  padding: 25px;
+  padding: 50px;
   margin-top: -25px;
   background-color: #D780F8; 
 
@@ -10523,12 +10526,11 @@ header.masthead p {
 
   
 .masthead img{
-  margin-top: -275px;
+  margin-top: -270px;
   position: absolute;
-  background-size: cover;
-  overflow: auto;
+  background-size: contain;
   width: 100%;
-  height: auto;
+  height: 111.5%;
   z-index: 1;
 }
 
@@ -10540,14 +10542,15 @@ header.masthead p {
     margin-left: 200px;
   }
   header.masthead a {
-    margin-top: 200px;
-    z-index: 2;
+    margin-top: 250px;
+    z-index: 3;
     padding: 1.1rem 1.25rem;
     font-size: 2.5rem;
     font-weight: 700;
     text-transform: uppercase;
     border: none;
     border-radius: 8rem;
+    margin-left: -50px;
   }
   .navbar-brand .logo-topo  {
     margin-top: 20px;
@@ -10572,17 +10575,6 @@ header.masthead p {
   
 }
 
-@media (max-width: 367px) {
-  header.masthead h1 {
-    font-size: 2.5rem;   
-  }
-  
-
-  header.masthead a {
-    width: 50px;
-  }
- 
-}
 
 
 #portfolio .container-fluid {
