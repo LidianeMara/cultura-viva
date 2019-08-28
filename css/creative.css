@@ -10474,7 +10474,7 @@ header.masthead {
 
 }
  
- @media only screen and (max-width: 920px) {
+ @media only screen and (max-width: 600px) {
  .masthead img{
   display: flex;
   position: absolute;
@@ -10488,8 +10488,11 @@ header.masthead {
 }
 header.masthead h1 {
   font-size: 2.5rem;
-  margin-left: 35px;
+  margin-left: 10px;
   margin-top: -45px;
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
 
 }
 
@@ -10513,13 +10516,17 @@ header.masthead a {
   margin-top: -150px;
   background-color: #000;
   flex-wrap: wrap;
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
  
 }
 .masthead .box-head{     /*  BOX DE  FUNDO TEXTO   */
+  display: flex;
   width: 100%;
-  z-index: 2;
   padding: 15px;
   margin-top: -23px;
+  z-index: 2;
   background-color: #D780F8; 
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
@@ -10530,15 +10537,21 @@ header.masthead a {
 
 /*  RESPONSIVO DESKTOP */ 
 
-@media only screen and (min-width: 1092px) {
+@media only screen and (min-width: 920px) {
    
   header.masthead p {
-    font-size: 1.20rem;
+    position: initial;
+    font-size: 1.213rem;
     font-style: bold;
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    transition: all 0.35s;
+    
   }
 
   
 .masthead img{
+  display: flex;
   position: absolute;
   width: 100%;
   height: auto;
