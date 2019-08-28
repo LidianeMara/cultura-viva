@@ -10486,10 +10486,7 @@ header.masthead {
   transition: all 0.35s;
  
 }
-
-
 header.masthead h1 {
-  
   font-size: 2.5rem;
   margin-left: 35px;
   margin-top: -45px;
@@ -10509,8 +10506,8 @@ header.masthead a {
   transition: all 0.35s;
 }
 
- 
 .masthead p {
+  display: flex;
   font-size: x-small;
   font-style: bold;
   margin-top: -150px;
@@ -10542,11 +10539,11 @@ header.masthead a {
 
   
 .masthead img{
-  margin-top: -270px;
   position: absolute;
-  background-size: contain;
   width: 100%;
-  height: 111.5%;
+  height: auto;
+  background-size: cover; 
+  margin-top: -360px;
   z-index: 1;
 }
 
@@ -10583,9 +10580,9 @@ header.masthead a {
   }
   .masthead .box-head{     /*  BOX DE  FUNDO TEXTO   */
     width: 100%;
-    z-index: 2;
     padding: 40px;
     background-color: #D780F8; 
+    z-index: 2;
   
    }
   
