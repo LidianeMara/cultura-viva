@@ -10459,10 +10459,8 @@ hr.light {
 }
 
 
-
-
- /*   MOBILE RESPONSIVO       */ 
- header.masthead {
+/*   MOBILE RESPONSIVO       */ 
+header.masthead {
   height: 100vh;
   min-height: 40rem;
   padding-top: 72px;
@@ -10470,8 +10468,14 @@ hr.light {
   background-color: #3BB4D7;
   background-size: cover; 
 }
+.navbar-brand .logo-topo{
+  width: 40px;
+  height: auto;
 
-.masthead img{
+}
+ 
+ @media only screen and (max-width: 920px) {
+ .masthead img{
   display: flex;
   position: absolute;
   margin-top: 50px;
@@ -10505,17 +10509,13 @@ header.masthead a {
   transition: all 0.35s;
 }
 
-.navbar-brand .logo-topo{
-  width: 40px;
-  height: auto;
-
-}
  
 .masthead p {
   font-size: x-small;
   font-style: bold;
   margin-top: -150px;
   background-color: #000;
+  flex-wrap: wrap;
  
 }
 .masthead .box-head{     /*  BOX DE  FUNDO TEXTO   */
@@ -10529,10 +10529,11 @@ header.masthead a {
   transition: all 0.35s;
 
  }
+}
 
 /*  RESPONSIVO DESKTOP */ 
 
-@media (min-width: 1080px) {
+@media only screen and (min-width: 1092px) {
    
   header.masthead p {
     font-size: 1.20rem;
